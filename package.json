@@ -1,0 +1,21 @@
+{
+  "name": "windows-explorer-app",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "packageManager": "bun@1.2.5",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "turbo": "^2.4.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
